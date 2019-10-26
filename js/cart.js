@@ -14,6 +14,7 @@ function renderCart() {
     clearCart();
     showCart();
     cart.updateCounter();
+    generateCatalog();
 }
 
 function clearCart() {

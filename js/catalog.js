@@ -20,6 +20,7 @@ function handleSubmit(event) {
     cart.saveToLocalStorage();
     cart.updateCounter();
     updateCartPreview();
+    generateCatalog();
 
 }
 

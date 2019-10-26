@@ -5,15 +5,15 @@ html {
 }
 
 body {
-    background-image: linear-gradient( to top right, #fff, #ccc);
+    background-image: linear-gradient( to top right, blue, gray);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body>header {
-    background: #062f4f;
-    border-bottom: 1px solid #ddd;
+    background: black;
+    border-bottom: 1px solid rgb(192, 155, 155);
     overflow: hidden;
     padding: .5em 5em;
 }
@@ -39,7 +39,7 @@ body>header nav li {
 }
 
 body>header nav li a {
-    color: #eee;
+    color: blue;
     padding: 0 .5em;
     text-decoration: none;
 }
@@ -98,7 +98,7 @@ footer {
 }
 
 .card header {
-    background: #813772;
+    background: blue;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     color: #eee;
@@ -148,7 +148,7 @@ label span {
 .card#cartContents {
     background: #f5f5f5;
     padding: 1.5em;
-    box-shadow: 0 3px 2px #777;
+    box-shadow: 0 3px 2px rgb(241, 239, 239);
 }
 
 #cart {
@@ -159,15 +159,15 @@ label span {
 
 #cart thead tr th {
     color: #777;
-    border-bottom: 3px solid #062f4f;
+    border-bottom: 3px solid rgb(218, 7, 7);
     font-weight: bold;
     padding: .5em 1em;
 }
 
 #cart tr td {
-    border-bottom: 1px solid #062f4f;
+    border-bottom: 1px solid rgb(218, 7, 7);
     border-collapse: none;
-    color: #777;
+    color: rgb(218, 7, 7);
     padding: .5em 1em;
     text-align: center;
     width: auto;
