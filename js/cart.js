@@ -7,8 +7,8 @@ table.addEventListener('click', removeItemFromCart);
 var cart;
 
 function loadCart() {
-    var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-    cart = new Cart(cartItems);
+    var cartProducts = JSON.parse(localStorage.getItem('cart')) || [];
+    cart = new Cart(cartProducts);
 }
 
 // Make magic happen --- re-pull the Cart, clear out the screen and re-draw it
@@ -16,11 +16,18 @@ function renderCart() {
     loadCart();
     clearCart();
     showCart();
+    cart.updateCounter();
 }
 
-// TODO: Remove all of the rows (tr) in the cart table (tbody)
-function clearCart() {}
+function clearCart() {
+    var Rowsof = document.querySelectorAll('#cart tbody tr');
 
+    for (var i = 0; i <= Rowsof.length; i++) {
+        if (Rowsof[i]) {
+            Rowsof[i].remove();
+        }
+    }
+}
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
 function showCart() {
 
