@@ -11,9 +11,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-/* Specifically Targeting the Main Header (not to be confused with headers within cards) */
-
 body>header {
     background: #062f4f;
     border-bottom: 1px solid #ddd;
@@ -62,12 +59,6 @@ body>header h1 {
     opacity: 0.75;
 }
 
-
-/* Main Content */
-
-
-/* Note the height calculation -- that's to keep the footer at the bottom */
-
 main {
     background: #fff;
     border: 1px inset #ccc;
@@ -81,9 +72,6 @@ main {
     text-shadow: white -1px 1px;
 }
 
-
-/* Footer Styling and sticking to the bottom */
-
 footer {
     background: #eee;
     border-top: 1px solid #ccc;
@@ -93,9 +81,6 @@ footer {
     padding: .5em 5em;
     text-align: center;
 }
-
-
-/* Generic Deck and Card Styles */
 
 .deck {
     overflow: hidden;
@@ -112,9 +97,6 @@ footer {
     width: 45%;
 }
 
-
-/* Card styles specific to this application */
-
 .card header {
     background: #813772;
     border-top-left-radius: 6px;
@@ -129,9 +111,6 @@ footer {
 .card .copy {
     padding: 1.5em;
 }
-
-
-/* Styles for the order form and summary on the main page */
 
 legend {
     display: none;
@@ -172,13 +151,10 @@ label span {
     box-shadow: 0 3px 2px #777;
 }
 
-
-/* Styles for the table on the cart page */
-
 #cart {
     border-collapse: collapse;
     margin: auto;
-    width: 65%;
+    width: 75%;
 }
 
 #cart thead tr th {
